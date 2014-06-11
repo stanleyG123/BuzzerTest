@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  
+  form(action='/register',method='post')
+    input(type='text',name='name',placeholder='Name')
+    input(name='email',type='email',placeholder="Email")
+    input(type='submit',value='Register')
